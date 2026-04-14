@@ -45,9 +45,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 👨‍💻 About the Creator
 
-Created by **AARON THALAKKOTTOR Sooraj**
+Created by **Aaron Thalakkottor Sooraj**
 
-- **Affiliation:** A part of [HEXNICAI](https://hexnicai.vercel.app/)
+- **Affiliation:** A part of [Hexnicai](https://hexnicai.vercel.app/)
 - **LinkedIn:** [Connect with me on LinkedIn](https://www.linkedin.com/in/aaronts127pdz/)
 
 ## 📝 License

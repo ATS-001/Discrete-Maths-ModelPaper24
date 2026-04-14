@@ -27,7 +27,7 @@ export default function About() {
             <div className="border-t border-gray-100 pt-6 mt-6 space-y-6">
               <div className="space-y-1">
                 <p className="text-sm font-medium text-gray-400 uppercase tracking-wider">Created By</p>
-                <p className="text-xl font-semibold text-gray-900">AARON THALAKKOTTOR Sooraj</p>
+                <p className="text-xl font-semibold text-gray-900">Aaron Thalakkottor Sooraj</p>
               </div>
 
               <div className="space-y-1">
@@ -38,7 +38,7 @@ export default function About() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-lg font-medium text-blue-600 hover:text-blue-800 transition-colors group"
                 >
-                  A PART OF HEXNICAI
+                  A part of Hexnicai
                   <ExternalLink className="w-4 h-4 ml-1.5 opacity-50 group-hover:opacity-100 transition-opacity" />
                 </a>
               </div>
