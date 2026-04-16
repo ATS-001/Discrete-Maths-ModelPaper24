@@ -4,18 +4,18 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
-      <div className="flex-1 flex flex-col items-center justify-center p-6">
+    <div className="min-h-[100dvh] bg-gray-50 flex flex-col font-sans">
+      <main className="flex-1 flex flex-col items-center justify-center p-6 md:p-12">
         <div className="max-w-3xl w-full text-center space-y-8">
           {/* Header Section */}
           <div className="space-y-4">
             <div className="inline-flex items-center justify-center p-4 bg-blue-100 rounded-full mb-4">
               <BookOpen className="w-12 h-12 text-blue-600" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight">
               KTU Discrete Math Syllabus 2024
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
               Comprehensive step-by-step solutions for the KTU Discrete Mathematics Syllabus 2024. Master the concepts with detailed explanations and diagrams.
             </p>
           </div>
@@ -49,7 +49,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );

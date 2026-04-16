@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function DirectedGraph() {
   return (
-    <span className="flex justify-center my-8">
+    <span className="flex justify-center my-8 overflow-x-auto">
       <svg width="300" height="300" className="bg-white rounded-lg shadow-sm border border-gray-200">
         <defs>
           <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse">

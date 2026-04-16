@@ -42,6 +42,8 @@ Hence, proved.
 A POSET is a lattice if every pair of elements has a Least Upper Bound (LUB / Supremum) and a Greatest Lower Bound (GLB / Infimum) within the set.
 
 **Step 1:** Consider the pair of elements $\\{6, 9\\}$.
+*(The Hasse diagram for the POSET is shown below)*
+<posetdiagram />
 
 **Step 2:** Find the upper bounds of $\\{6, 9\\}$.
 Upper bounds must be multiples of both 6 and 9. The least common multiple is 18.

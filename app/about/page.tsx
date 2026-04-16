@@ -4,14 +4,15 @@ import Footer from '@/components/Footer';
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
-      <div className="flex-1 flex flex-col items-center justify-center p-6">
+    <div className="min-h-[100dvh] bg-gray-50 flex flex-col font-sans">
+      <main className="flex-1 flex flex-col items-center justify-center p-6 md:p-12">
         <div className="max-w-2xl w-full">
           <Link 
             href="/"
-            className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 mb-8 transition-colors"
+            className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 mb-8 transition-colors group"
+            aria-label="Back to Home"
           >
-            <ArrowLeft className="w-4 h-4 mr-2" />
+            <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
             Back to Home
           </Link>
 
@@ -62,7 +63,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );

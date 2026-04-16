@@ -8,6 +8,7 @@ import rehypeRaw from 'rehype-raw';
 import 'katex/dist/katex.min.css';
 import HasseDiagram from './HasseDiagram';
 import DirectedGraph from './DirectedGraph';
+import PosetDiagram from './PosetDiagram';
 
 interface SolutionViewerProps {
   question: string;
@@ -36,6 +37,8 @@ export default function SolutionViewer({ question, answer }: SolutionViewerProps
               hassediagram: () => <HasseDiagram />,
               // @ts-ignore
               directedgraph: () => <DirectedGraph />,
+              // @ts-ignore
+              posetdiagram: () => <PosetDiagram />,
               table: ({node, ...props}: any) => (
                 <div className="overflow-x-auto my-6">
                   <table className="min-w-full border-collapse border border-gray-300" {...props} />
