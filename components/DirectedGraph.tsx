@@ -2,15 +2,16 @@ import React from 'react';
 
 export default function DirectedGraph() {
   return (
-    <span className="flex justify-center my-8 overflow-x-auto">
-      <svg width="300" height="300" className="bg-white rounded-lg shadow-sm border border-gray-200">
-        <defs>
-          <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse">
-            <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b" />
-          </marker>
-        </defs>
+    <span className="flex justify-center my-8">
+      <span className="block w-full max-w-[400px] mx-auto pb-4">
+        <svg viewBox="0 0 300 300" className="w-full h-auto bg-white rounded-lg shadow-sm border border-gray-200">
+          <defs>
+            <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b" />
+            </marker>
+          </defs>
 
-        {/* Self loops */}
+          {/* Self loops */}
         <path d="M 40 40 C 10 10, 10 70, 40 40" fill="none" stroke="#64748b" strokeWidth="2" markerEnd="url(#arrow)" />
         <path d="M 260 40 C 290 10, 290 70, 260 40" fill="none" stroke="#64748b" strokeWidth="2" markerEnd="url(#arrow)" />
         <path d="M 260 260 C 290 290, 290 230, 260 260" fill="none" stroke="#64748b" strokeWidth="2" markerEnd="url(#arrow)" />
@@ -50,6 +51,7 @@ export default function DirectedGraph() {
           <text textAnchor="middle" dy=".3em" className="text-sm font-bold fill-slate-800">d</text>
         </g>
       </svg>
+      </span>
     </span>
   );
 }

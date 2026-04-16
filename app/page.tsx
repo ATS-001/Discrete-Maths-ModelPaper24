@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { BookOpen, Info, ArrowRight, Github } from 'lucide-react';
+import { BookOpen, Info, ArrowRight, Github, Globe } from 'lucide-react';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
+          <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 pt-8">
             <Link 
               href="/solutions"
               className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 group"
@@ -46,6 +46,16 @@ export default function Home() {
             >
               <Github className="w-5 h-5 mr-2" />
               View on GitHub
+            </a>
+
+            <a 
+              href="https://hexnicai.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-blue-700 bg-blue-50 border border-blue-200 hover:bg-blue-100 rounded-xl shadow-sm hover:shadow-md transition-all duration-200"
+            >
+              <Globe className="w-5 h-5 mr-2" />
+              Visit HexnicAI
             </a>
           </div>
         </div>

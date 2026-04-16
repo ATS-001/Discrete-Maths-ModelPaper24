@@ -40,46 +40,48 @@ const edges = [
 
 export default function HasseDiagram() {
   return (
-    <span className="flex justify-center my-8 overflow-x-auto">
-      <svg width="600" height="500" className="bg-white rounded-lg shadow-sm border border-gray-200">
-        <defs>
-          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-            <polygon points="0 0, 10 3.5, 0 7" fill="#9ca3af" />
-          </marker>
-        </defs>
-        
-        {/* Draw edges */}
-        {edges.map(([sourceId, targetId], idx) => {
-          const source = nodes.find(n => n.id === sourceId);
-          const target = nodes.find(n => n.id === targetId);
-          if (!source || !target) return null;
-          return (
-            <line
-              key={idx}
-              x1={source.x}
-              y1={source.y}
-              x2={target.x}
-              y2={target.y}
-              stroke="#cbd5e1"
-              strokeWidth="2"
-            />
-          );
-        })}
+    <span className="flex justify-center my-8">
+      <span className="block w-full max-w-[600px] mx-auto pb-4">
+        <svg viewBox="0 0 600 500" className="w-full h-auto bg-white rounded-lg shadow-sm border border-gray-200">
+          <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="#9ca3af" />
+            </marker>
+          </defs>
+          
+          {/* Draw edges */}
+          {edges.map(([sourceId, targetId], idx) => {
+            const source = nodes.find(n => n.id === sourceId);
+            const target = nodes.find(n => n.id === targetId);
+            if (!source || !target) return null;
+            return (
+              <line
+                key={idx}
+                x1={source.x}
+                y1={source.y}
+                x2={target.x}
+                y2={target.y}
+                stroke="#cbd5e1"
+                strokeWidth="2"
+              />
+            );
+          })}
 
-        {/* Draw nodes */}
-        {nodes.map(node => (
-          <g key={node.id} transform={`translate(${node.x}, ${node.y})`}>
-            <circle r="20" fill="#f8fafc" stroke="#3b82f6" strokeWidth="2" />
-            <text
-              textAnchor="middle"
-              dy=".3em"
-              className="text-xs font-medium fill-slate-700"
-            >
-              {node.label}
-            </text>
-          </g>
-        ))}
-      </svg>
+          {/* Draw nodes */}
+          {nodes.map(node => (
+            <g key={node.id} transform={`translate(${node.x}, ${node.y})`}>
+              <circle r="20" fill="#f8fafc" stroke="#3b82f6" strokeWidth="2" />
+              <text
+                textAnchor="middle"
+                dy=".3em"
+                className="text-xs font-medium fill-slate-700"
+              >
+                {node.label}
+              </text>
+            </g>
+          ))}
+        </svg>
+      </span>
     </span>
   );
 }
