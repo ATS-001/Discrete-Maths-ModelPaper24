@@ -36,12 +36,12 @@ export default function About() {
                 <div className="space-y-1">
                   <p className="text-sm font-medium text-gray-400 uppercase tracking-wider">Affiliation</p>
                   <a 
-                    href="https://hexnicai.vercel.app/" 
+                    href="https://c-wats.vercel.app/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-lg font-medium text-blue-600 hover:text-blue-800 transition-colors group"
                   >
-                    A part of Hexnicai
+                    A part of C-WATS
                     <ExternalLink className="w-4 h-4 ml-1.5 opacity-50 group-hover:opacity-100 transition-opacity" />
                   </a>
                 </div>
