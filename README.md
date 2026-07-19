@@ -13,8 +13,6 @@ A modern, interactive web application designed to help **KTU (APJ Abdul Kalam Te
 
 **Website:** https://discrete-maths-model-paper24.vercel.app/
 
-> Replace the above URL with your deployed website.
-
 ---
 
 # 🚀 Features
